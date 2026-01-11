@@ -1,0 +1,60 @@
+[
+  {
+    "type": "identify",
+    "userId": "user_001",
+    "anonymousId": "anon_123",
+    "timestamp": "2024-01-01T09:00:00Z",
+    "traits": {
+      "email": "user1@example.com",
+      "plan": "free"
+    },
+    "context": {
+      "device": {
+        "type": "mobile"
+      }
+    }
+  },
+  {
+    "type": "track",
+    "event": "Signup Completed",
+    "userId": "user_001",
+    "timestamp": "2024-01-01T09:02:00Z",
+    "properties": {
+      "method": "email"
+    }
+  },
+  {
+    "type": "track",
+    "event": "Login",
+    "userId": "user_001",
+    "timestamp": "2024-01-02T08:30:00Z"
+  },
+  {
+    "type": "track",
+    "event": "Feature Used",
+    "userId": "user_001",
+    "timestamp": "2024-01-02T08:35:00Z",
+    "properties": {
+      "feature_name": "dashboard"
+    }
+  },
+  {
+    "type": "track",
+    "event": "Feature Used",
+    "anonymousId": "anon_456",
+    "timestamp": "2024-01-02T10:00:00Z",
+    "properties": {
+      "feature_name": "pricing_page"
+    }
+  },
+  {
+    "type": "identify",
+    "userId": "user_002",
+    "anonymousId": "anon_456",
+    "timestamp": "2024-01-02T10:05:00Z",
+    "traits": {
+      "email": "user2@example.com",
+      "plan": "pro"
+    }
+  }
+]
