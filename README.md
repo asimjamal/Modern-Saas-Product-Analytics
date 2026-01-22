@@ -1,2 +1,97 @@
-# Modern Saas Product Analytics
-This project demonstrates a step-by-step, event-driven product analytics workflow using Segment-style SaaS event data. The analysis progresses from raw JSON event logs to product insights such as user behavior, funnels, retention, and activation, following modern product analytics methodologies.
+# Modern SaaS Product Analytics (Event-Driven)
+
+This repository documents a step-by-step journey into modern, event-driven product analytics using Segment-style SaaS data.
+
+The goal of this project is to build strong foundations in product analytics — starting from raw event logs and progressively moving toward meaningful product insights such as activation, engagement, funnels, and retention, following industry-standard methodologies used in 2025–2026.
+
+---
+
+## Project Philosophy
+
+This project prioritizes:
+- Correct understanding of event data before metrics
+- Clear definitions before calculations
+- Product thinking over premature optimization
+- Slow, intentional analysis with daily progress
+
+Each notebook focuses on **one core concept**, mirroring how real product analytics work is done in practice.
+
+---
+
+## Dataset Overview
+
+The project uses Segment-style JSON event data representing:
+- User identification events (`identify`)
+- Behavioral tracking events (`track`)
+- Anonymous to known user transitions
+- Timestamped user actions with nested metadata
+
+The dataset structure mirrors real-world SaaS analytics pipelines used by tools such as Segment, Mixpanel, and Amplitude.
+
+---
+
+## Progress So Far (Days 1–5)
+
+### Day 1 — Understanding Event Data
+- Loaded and inspected raw JSON event logs
+- Learned the anatomy of an event (type, user identity, properties, context)
+- Differentiated user traits from event properties
+
+### Day 2 — Users, Identity, and Time
+- Explored anonymous vs known users
+- Understood identity resolution using `anonymousId` and `userId`
+- Ordered events chronologically and reasoned about user timelines
+
+### Day 3 — Sessions and User Timelines
+- Implemented time-based sessionization
+- Assigned session IDs using inactivity thresholds
+- Built readable user timelines from raw events
+
+### Day 4 — Activation and Meaningful Events
+- Identified which events represent real product value
+- Defined activation as a behavioral milestone
+- Isolated first activation events per user
+
+### Day 5 — Event Taxonomy and Metric Definitions
+- Created a clear event taxonomy
+- Defined core product metrics in plain language
+- Validated metric logic before computation
+
+---
+
+## Methodology
+
+The analysis follows modern product analytics principles:
+- Event-driven data modeling
+- Explicit activation definitions
+- Session-based user behavior analysis
+- Clear metric ownership and meaning
+
+Metrics are defined before being calculated to ensure analytical correctness and business relevance.
+
+---
+
+## What’s Next
+
+Starting **Day 6**, the project transitions to:
+- Larger and messier datasets
+- Data cleaning and normalization
+- Real-world product metrics
+- Funnels, retention, and cohort analysis
+
+The foundations established in Days 1–5 will be applied at scale.
+
+---
+
+## Tools Used
+
+- Python 3
+- Jupyter Notebook
+- pandas
+- JSON-based event data
+
+---
+
+## Author Notes
+
+This repository is intentionally built incrementally, with daily commits and documented reasoning, to reflect how strong product analytics skills are developed in real-world environments.
