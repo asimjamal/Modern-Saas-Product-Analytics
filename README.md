@@ -89,11 +89,11 @@ Metrics are defined before being calculated to ensure analytical correctness and
 
 ## What’s Next
 
-Starting **Day 6**, the project transitions to:
-- Larger and messier datasets
-- Data cleaning and normalization
-- Real-world product metrics
-- Funnels, retention, and cohort analysis
+Starting **Day 9**, the project transitions to:
+- Temporal clustering analysis of WARN events
+- Sequence modeling before instability
+- Anomaly detection
+- Visualization of reliability patterns
 
 The foundations established in Days 1–5 will be applied at scale.
 
