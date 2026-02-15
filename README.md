@@ -72,7 +72,22 @@ The dataset structure mirrors real-world SaaS analytics pipelines used by tools 
 - Generated session-level metrics:
    - Session duration
    - Event count
-  
+ 
+### Day 8 — Reliability & Instability Analysis
+- Discovered:
+   - 1920 INFO events
+   - 80 WARN events
+   - 0 ERROR events
+- Key Findings:
+   - 4% of all events are WARN-level.
+   - All WARN events originate from a single component:
+   - dfs.DataNode$DataXceiver
+   - ~17.6% of that component’s events are WARN.
+   - Indicates localized operational instability rather than systemic failure.
+- Performed:
+   - WARN rate analysis per component
+   - Session-level instability detection
+   - Preliminary sequence inspection before WARN events
 ---
 
 ## Methodology
