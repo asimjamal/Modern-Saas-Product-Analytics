@@ -57,6 +57,22 @@ The dataset structure mirrors real-world SaaS analytics pipelines used by tools 
 - Defined core product metrics in plain language
 - Validated metric logic before computation
 
+### Day 6 — Real-World Dataset Ingestion
+- Inspected raw HDFS logs
+- Reverse-engineered schema
+- Wrote custom regex parser
+- Structured 2000 raw logs into a DataFrame
+- Created unified timestamp column
+
+### Day 7 — Sessionization
+- Sorted events by component and timestamp
+- Calculated time gaps
+- Defined session boundary (5-minute inactivity rule)
+- Assigned session IDs
+- Generated session-level metrics:
+   - Session duration
+   - Event count
+  
 ---
 
 ## Methodology
